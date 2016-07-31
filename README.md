@@ -4,6 +4,7 @@ In preparation for building an app from scratch in Rails, this week's only HW wi
 
 ### Requirements
 
+- Due Friday at 9:00AM
 - Must have 2 models
 - Must have 1 association between models
 - Have complete RESTful routes for at least 1 model
