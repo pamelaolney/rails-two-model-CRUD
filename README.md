@@ -15,11 +15,11 @@ In preparation for building an app from scratch in Rails, this week's only HW wi
   - Use websockets
 
 ### Suggestions for Apps
-  Cookbook
+  - Cookbook
     - Recipes & Ingredients
-  Messaging platform
+  - Messaging platform
     - Messages and Users
-  Event Scheduler
+  - Event Scheduler
     - Location and Event, Events and Users
-  Song Playlist app
+  - Song Playlist app
     - Songs and Playlists
