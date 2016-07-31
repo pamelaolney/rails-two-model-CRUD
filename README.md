@@ -1,6 +1,10 @@
 ## Week 6 Homework
 
-In preparation for building an app from scratch in Rails, this week's only HW will be to build a CRUD app from the ground up. You can build an app of your choosing. If you want to try out an idea, before project week, this is a perfect opportunity.
+In preparation for building an app from scratch in Rails, this week's only HW will be to build a CRUD app from the ground up. For this homework, you will build an app of your choosing.
+
+If you don't have any ideas for projects, use the list of sample projects below.
+
+If you have multiple ideas for project week, this may be a good opportunity to try one out. We would suggest not doing the same project over for project week, so you don't burn out.  
 
 ### Requirements (MVP)
 
