@@ -1,0 +1,5 @@
+<%= render 'form' %>
+
+<%= link_to "(delete)", category_project_path(@category, @project),
+    method: :delete,
+    data: {confirm: "What! Why? Are you sure?"} %>

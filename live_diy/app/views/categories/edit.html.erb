@@ -1,0 +1,5 @@
+<%= render 'form' %>
+<p><%= link_to "(-) Remove Category", category_path(@category),
+        method: :delete,
+        data: {confirm: "Are you sure?"} %>
+</p>

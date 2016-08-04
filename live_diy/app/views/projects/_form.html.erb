@@ -1,0 +1,15 @@
+<%= form_for [@category, @project] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.label :time_to_completion %>
+  <%= f.text_field :time_to_completion %>
+
+  <%= f.label :instructions %>
+  <%= f.text_area :instructions %>
+
+<%= f.submit %>
+<% end %>
