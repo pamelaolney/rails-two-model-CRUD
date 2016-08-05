@@ -2,9 +2,12 @@
   <p><% type %><%= message %></p>
 <% end %>
 
-<p><%= link_to "(+) Add Category", new_category_path(@category) %></p>
+<br>
+<br>
+
+<p class='add'><%= link_to "(+) Add Category", new_category_path(@category) %></p>
 
 <% @categories.each do |category| %>
-  <p><%= link_to category.name, category_path(category) %>  <%= link_to "  (Edit)", edit_category_path(category) %></p>
-  <%= image_tag category.image_url %>
+  <ul class='category'><li><%= image_tag category.image_url %></li>
+  <li><%= link_to category.name, category_path(category) %>  <%= link_to "  (Edit)", edit_category_path(category) %></li></ul>
 <% end %>

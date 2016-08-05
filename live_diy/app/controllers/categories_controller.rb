@@ -13,9 +13,17 @@ class CategoriesController < ApplicationController
 
   def create
     @category = Category.create(category_params)
-    flash[:notice] = "The category #{@category.name} has successfully been created."
-    redirect_to @category
+    if @category.save(category_params)
+      flash[:notice] = "The category #{@category.name} has successfully been created."
+      redirect_to @category
+    else
+      @category.errors.full_messages
+      flash.now[:notice] = "Must apply an image to create category.  Come on now!"
+      render :new
+    end
   end
+
+
 
   def edit
     @category = Category.find(params[:id])
