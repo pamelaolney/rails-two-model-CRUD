@@ -1,10 +1,12 @@
 class CategoriesController < ApplicationController
   def index
     @categories = Category.all
+    render :json => @categories
   end
 
   def show
     @category = Category.find(params[:id])
+    render :json => @category    
   end
 
   def new
@@ -16,6 +18,7 @@ class CategoriesController < ApplicationController
     if @category.save(category_params)
       flash[:notice] = "The category #{@category.name} has successfully been created."
       redirect_to @category
+      render json: {success: true}, status: :ok
     else
       @category.errors.full_messages
       flash.now[:notice] = "Must apply an image to create category.  Come on now!"
